@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>기업 홈페이지</title>
+</head>
+<body>
+  <div class="container">
+    <h1>환영합니다.</h1>
+    <div>
+      <p th:text="${authorization.principle.username} + '님 안녕하세요?'">인사말</p>
+    </div>
+  </div>
+</body>
+</html>
