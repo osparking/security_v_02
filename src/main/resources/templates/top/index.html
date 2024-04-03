@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
 <meta charset="UTF-8">
 <title>기업 홈페이지</title>
@@ -8,7 +8,7 @@
 	<div class="container">
 		<h1>환영합니다.</h1>
 		<div>
-			<p th:text="${#authentication.principal.username} + '님 안녕하세요?'">인사말</p>
+		  <p><span sec:authentication="name"></span> 님 환영합니다!</p>		
 		</div>
 	</div>
 </body>
